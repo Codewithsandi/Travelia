@@ -1,0 +1,147 @@
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #10b981;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #059669;
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* hambarger icon css start here  */
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #000;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+.ham1 .top {
+    stroke-dasharray: 40 139;
+}
+
+.ham1 .bottom {
+    stroke-dasharray: 40 180;
+}
+
+.ham1.active .top {
+    stroke-dashoffset: -98px;
+}
+
+.ham1.active .bottom {
+    stroke-dashoffset: -138px;
+}
+
+/* hambarger icon css end here  */
+
+/* blog section slider css code start here */
+.swiper-navBtn {
+    color: #ffffff !important;
+    height: 40px !important;
+    width: 40px !important;
+    /* background: #f32323; */
+    border-radius: 100% !important;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 18px !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-navBtn {
+        display: none;
+    }
+}
+/* blog section slider css code end here */
+
+
+/*==subscribe======================*/
+#subscribe strong{
+    font-size: 2.5rem;
+    color: #1b1b1b;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-align: center;
+}
+#subscribe p{
+    color: #333333;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+#subscribe form{
+    max-width: 450px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: 30px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+}
+#subscribe form input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    padding: 0px 20px;
+}
+#subscribe form button{
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #10b981;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+

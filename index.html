@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/CSS/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/CSS/custom.css" />
+    <link rel="stylesheet" href="src/CSS/animation.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="src/CSS/swiper-bundle.min.css" />
+  </head>
+  <body class="font-poppins">
+    <!-- header section start here -->
+    <header
+      id="header"
+      class="header_section sticky top-0 duration-300 left-0 w-full bg-white z-50 h-20 justify-center items-center flex"
+    >
+      <nav
+        class="w-full lg:w-[95%] xl:w-[1100px] px-3 md:px-5 bg-white mx-auto flex items-center justify-between"
+      >
+        <div class="left w-44 md:w-auto">
+          <img src="asset/images/logo-svg.svg" alt="" />
+        </div>
+        <div class="right flex items-center gap-5">
+          <ul
+            class="nav-links flex flex-col md:flex-row justify-center duration-500 transition-all h-[14rem] pl-6 md:p-0 md:h-auto left-0 top-[-400%] absolute bg-white md:bg-transparent shadow-md md:shadow-none w-full md:static gap-5 text-lg font-semibold"
+          >
+            <li>
+              <a
+                class="hover:border-b-2 hover:border-emerald-500 duration-100"
+                href="#heroArea"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-2 hover:border-emerald-500 duration-100"
+                href="#destination"
+                >Destination</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-2 hover:border-emerald-500 duration-100"
+                href="#service"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b-2 hover:border-emerald-500 duration-100"
+                href="#testimonial"
+                >Client</a
+              >
+            </li>
+          </ul>
+          <div class="flex items-center gap-1">
+            <button
+              class="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 cursor-pointer rounded-md text-white whitespace-nowrap"
+            >
+              <a href="mailto:demo@gmail.com"> Contact Us </a>
+            </button>
+            <div class="md:hidden" onclick="navbarMenuToggleFnc()">
+              <svg
+                class="ham hamRotate ham1"
+                viewBox="0 0 100 100"
+                width="50"
+                onclick="this.classList.toggle('active')"
+              >
+                <path
+                  class="line top"
+                  d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
+                />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path
+                  class="line bottom"
+                  d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header section end here -->
+
+    <!-- Hero area section start here -->
+    <section
+      id="heroArea"
+      class="w-full lg:w-[95%] xl:w-[1100px] px-5 pt-10 mx-auto bg-white"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 items-center py-5">
+        <div class="hero_left opacity-0 relative">
+          <div class="z-10 relative">
+            <h1
+              class="text-5xl lg:text-6xl xl:text-7xl text-center md:text-left font-black"
+            >
+              Life Is Short & Word Is Wide
+            </h1>
+            <p class="py-12 md:text-xl text-justify md:text-left">
+              More Vacations to Love: Elevate your vacations with a transcendent
+              collection of premium resorts and city properties around the
+              globe.
+            </p>
+            <div
+              class="flex items-center justify-center md:justify-start gap-4"
+            >
+              <button
+                class="w-48 py-3 bg-emerald-500 hover:bg-emerald-600 border-2 border-emerald-500 hover:border-emerald-600 cursor-pointer rounded-md text-white whitespace-nowrap"
+              >
+                Get Started
+              </button>
+              <button
+                class="w-48 py-3 rounded-md border-2 cursor-pointer border-emerald-600 hover:bg-emerald-600 hover:text-white"
+              >
+                <a href="mailto:demo@gmail.com"> Contact Us </a>
+              </button>
+            </div>
+          </div>
+          <img
+            src="asset/images/hot-air-balloon.png"
+            class="w-14 absolute -top-16 hot_air_baloon hidden md:block"
+            alt=""
+          />
+          <img
+            src="asset/images/dashed_arrow.svg"
+            class="absolute w-1/2 -right-40 -rotate-[30deg] hidden md:block -top-16 z-0"
+            alt=""
+          />
+          <div
+            class="absolute w-7 h-7 rounded-[100%] right-32 bg-gradient-to-r from-emerald-300 to-orange-300 -top-20"
+          ></div>
+          <div
+            class="absolute w-4 h-4 rounded-[100%] right-64 bg-gradient-to-r from-emerald-300 to-orange-300 -top-5"
+          ></div>
+        </div>
+        <div
+          class="hero_right opacity-0 relative flex items-center justify-center"
+        >
+          <div class="w-full relative z-20">
+            <img src="asset/images/hero_banner3.webp" class="" alt="" />
+          </div>
+          <div
+            class="absolute h-[50%] top-48 lg:top-56 w-full rounded-br-full rounded-bl-full z-10 bg-emerald-500"
+          ></div>
+          <div
+            class="absolute h-[60%] w-[60%] rounded-[100%] blur-2xl z-0 bg-gradient-to-r from-emerald-300 to-orange-300"
+          ></div>
+          <div
+            class="absolute z-30 bg-white shadow-md rounded-md p-2 flex items-center justify-between gap-6 left-16 bottom-0 w-56 opacity-0 hero_rating_container"
+          >
+            <div class="left">
+              <img src="asset/images/star.png" class="w-10" alt="" />
+            </div>
+            <div class="right">
+              <h2 class="text-lg font-semibold">24K</h2>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div
+            class="absolute z-30 bg-white shadow-md rounded-md p-2 flex items-center justify-between gap-6 right-14 lg:right-8 top-36 lg:top-52 w-56 opacity-0 hero_location_container"
+          >
+            <div class="left">
+              <img src="asset/images/google-maps.png" class="w-10" alt="" />
+            </div>
+            <div class="right">
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <img
+            src="asset/images/Small_dashed_arrow.png"
+            class="absolute w-[20%] right-0 top-0 z-0"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        id="heroFooter"
+        class="flex flex-col xl:flex-row gap-3 items-center mt-10 opacity-0"
+      >
+        <div class="text-center xl:text-left">
+          <h2 class="text-3xl font-bold">What Excites you Most?</h2>
+          <p class="mt-3 font-medium">
+            Lorem ipsum, dolor sit amet consectetur.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div class="bg-gray-50 px-3 py-5 rounded-md flex items-center gap-7">
+            <div class="bg-white rounded-full w-20 p-2">
+              <img src="asset/images/trekking.png" alt="" />
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold">Tracking</h4>
+              <p class="mt-2">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="bg-gray-100 px-3 py-5 rounded-md flex items-center gap-7">
+            <div class="bg-white rounded-full w-20 p-2">
+              <img src="asset/images/windsurf.png" alt="" />
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold">Windsurfing</h4>
+              <p class="mt-2">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="bg-gray-50 px-3 py-5 rounded-md flex items-center gap-7">
+            <div class="bg-white rounded-full w-20 p-2">
+              <img src="asset/images/kayak.png" alt="" />
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold">Rafting</h4>
+              <p class="mt-2">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero area section end here -->
+
+    <!-- Destination section start here -->
+    <section
+      id="destination"
+      class="w-full lg:w-[95%] xl:w-[1100px] opacity-0 px-5 mx-auto py-5 bg-white mt-10 destination"
+    >
+      <div class="flex items-center justify-center gap-1">
+        <h5 class="text-2xl font-medium text-emerald-600">Top Destination</h5>
+        <img
+          src="asset/images/rainbow.png"
+          class="w-3 rotate-90 -mt-3"
+          alt=""
+        />
+      </div>
+      <div class="text-center pb-5">
+        <h2 class="text-3xl md:text-5xl font-semibold mt-3">
+          Explore Top Destination
+        </h2>
+      </div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8 xl:gap-14 mt-10"
+      >
+        <div class="relative">
+          <div class="relative p-3 bg-white rounded-md shadow-md z-10">
+            <div
+              class="bg-cover bg-center rounded-md"
+              style="background: url(asset/images/london_small.jpg)"
+            >
+              <a href="#">
+                <img
+                  src="asset/images/london_opti_1_F.webp"
+                  class="rounded-md h-44 w-full bg-no-repeat object-center object-cover"
+                  alt="IMG"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+            <div class="flex justify-between items-center pt-4">
+              <span
+                class="py-1 px-3 bg-emerald-500 hover:bg-emerald-600 cursor-pointer rounded-md text-white whitespace-nowrap"
+                >London</span
+              >
+              <p class="text-yellow-600 flex items-center">
+                Review
+                <span class="pr-1">(4.8K)</span>
+                <span>
+                  <img src="asset/images/star.png" alt="" class="w-4" />
+                </span>
+              </p>
+            </div>
+            <div class="pt-4">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti, consequuntur.
+              </p>
+            </div>
+            <div class="flex justify-between items-center py-3">
+              <span class="text-yellow-600">$750</span>
+              <p class="flex items-center">
+                <span class="pr-2">
+                  <img src="asset/images/paper-plane.png" class="w-4" alt="" />
+                </span>
+                10 Days Trip
+              </p>
+            </div>
+          </div>
+          <div
+            class="absolute h-12 w-12 rounded-[100%] bg-gradient-to-r from-emerald-300 to-orange-300 -top-4 -right-6 z-0"
+          ></div>
+          <div
+            class="absolute h-12 w-12 rounded-[100%] bg-gradient-to-r from-emerald-300 to-orange-300 bottom-1 -left-5 z-0"
+          ></div>
+        </div>
+        <div class="p-3 bg-white rounded-md shadow-md">
+          <div
+            class="bg-cover bg-center rounded-md"
+            style="background: url(asset/images/london_small.jpg)"
+          >
+            <a href="#">
+              <img
+                src="asset/images/london_opti_1_F.webp"
+                class="rounded-md h-44 w-full bg-no-repeat object-center object-cover"
+                alt="IMG"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div class="flex justify-between items-center pt-4">
+            <span
+              class="py-1 px-3 bg-emerald-500 hover:bg-emerald-600 cursor-pointer rounded-md text-white whitespace-nowrap"
+              >Darjeeling</span
+            >
+            <p class="text-yellow-600 flex items-center">
+              Review
+              <span class="pr-1">(4.8K)</span>
+              <span>
+                <img src="asset/images/star.png" alt="" class="w-4" />
+              </span>
+            </p>
+          </div>
+          <div class="pt-4">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+              consequuntur.
+            </p>
+          </div>
+          <div class="flex justify-between items-center py-3">
+            <span class="text-yellow-600">$750</span>
+            <p class="flex items-center">
+              <span class="pr-2">
+                <img src="asset/images/paper-plane.png" class="w-4" alt="" />
+              </span>
+              10 Days Trip
+            </p>
+          </div>
+        </div>
+        <div class="p-3 bg-white rounded-md shadow-md">
+          <div
+            class="bg-cover bg-center rounded-md"
+            style="background: url(asset/images/london_small.jpg)"
+          >
+            <a href="#">
+              <img
+                src="asset/images/london_opti_1_F.webp"
+                class="rounded-md h-44 w-full bg-no-repeat object-center object-cover"
+                alt="IMG"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div class="flex justify-between items-center pt-4">
+            <span
+              class="py-1 px-3 bg-emerald-500 hover:bg-emerald-600 cursor-pointer rounded-md text-white whitespace-nowrap"
+              >Sikkim</span
+            >
+            <p class="text-yellow-600 flex items-center">
+              Review
+              <span class="pr-1">(4.8K)</span>
+              <span>
+                <img src="asset/images/star.png" alt="" class="w-4" />
+              </span>
+            </p>
+          </div>
+          <div class="pt-4">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+              consequuntur.
+            </p>
+          </div>
+          <div class="flex justify-between items-center py-3">
+            <span class="text-yellow-600">$750</span>
+            <p class="flex items-center">
+              <span class="pr-2">
+                <img src="asset/images/paper-plane.png" class="w-4" alt="" />
+              </span>
+              10 Days Trip
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Destination section end here -->
+
+    <!-- service section start here -->
+    <section
+      id="service"
+      class="w-full lg:w-[95%] xl:w-[1100px] px-5 mx-auto bg-white py-10"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 py-5">
+        <div id="service_left" class="opacity-0">
+          <div
+            class="flex items-center justify-center md:justify-start gap-1 pt-5 md:pt-2 lg:pt-12"
+          >
+            <h5 class="text-2xl text-center font-medium text-emerald-600 pb-3">
+              Traveler Point
+            </h5>
+            <img
+              src="asset/images/rainbow.png"
+              class="h-3 rotate-90 -translate-y-1"
+              alt=""
+            />
+          </div>
+          <div class="pb-5">
+            <h2
+              class="text-3xl lg:text-5xl text-center md:text-left font-semibold mt-3 pb-10"
+            >
+              We Offer Best Service
+            </h2>
+          </div>
+          <div>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-12 p-2 rounded-[100%] bg-gradient-to-r from-emerald-300 to-orange-300"
+              >
+                <img src="asset/images/location.png" alt="img" />
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold">Local Event</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 mt-8 border-b-2 pb-4">
+              <div
+                class="w-12 p-2 rounded-[100%] bg-gradient-to-r from-emerald-300 to-orange-300"
+              >
+                <img src="asset/images/airplane.png" alt="img" />
+              </div>
+              <h4 class="text-lg font-semibold">
+                <a href="#"> Arirang Best flights </a>
+              </h4>
+            </div>
+            <div class="flex items-center gap-3 mt-8 border-b-2 pb-4">
+              <div
+                class="w-12 p-2 rounded-[100%] bg-gradient-to-r from-emerald-300 to-orange-300"
+              >
+                <img src="asset/images/booking.png" alt="img" />
+              </div>
+              <h4 class="text-lg font-semibold">
+                <a href="#"> Easy Booking </a>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div
+          id="service_right"
+          class="opacity-0 relative flex items-center justify-center"
+        >
+          <div class="w-full flex justify-end items-center relative z-20">
+            <img
+              src="asset/images/hero-banner1.png"
+              class="xl:w-[80%]"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- service section end here -->
+
+    <!-- blog section start here -->
+    <section
+      id="blog"
+      class="w-full lg:w-[95%] xl:w-[1100px] px-5 mx-auto py-10 opacity-0 bg-white"
+    >
+      <div class="flex items-center justify-center gap-1">
+        <h5 class="text-2xl font-medium text-emerald-600">Latest Blog</h5>
+        <img
+          src="asset/images/rainbow.png"
+          class="w-3 rotate-90 -mt-3"
+          alt=""
+        />
+      </div>
+      <div class="text-center pb-5">
+        <h2 class="text-3xl md:text-5xl font-semibold mt-3">
+          Updated Blog Posts
+        </h2>
+      </div>
+      <div class="w-full max-w-[1120px] py-10 swiper">
+        <div class="slide-container md:mx-7 overflow-hidden">
+          <div class="card-wrapper swiper-wrapper">
+            <div
+              class="relative p-3 bg-white rounded-md shadow-lg z-10 swiper-slide"
+            >
+              <div class="mb-3">
+                <a href="#">
+                  <img
+                    src="asset/images/london_opti_1_F.webp"
+                    class="rounded-md bg-no-repeat bg-center bg-cover"
+                    alt="IMG"
+                  />
+                </a>
+              </div>
+              <span
+                class="py-1 px-3 bg-emerald-500 hover:bg-emerald-600 cursor-pointer rounded-md text-white whitespace-nowrap"
+              >
+                London
+              </span>
+              <div class="pt-4">
+                <p class="text-justify">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="flex justify-between items-center py-3">
+                <span class="font-semibold">See More</span>
+                <p class="flex items-center">
+                  <span class="pr-2">
+                    <img
+                      src="asset/images/paper-plane.png"
+                      class="w-4"
+                      alt=""
+                    />
+                  </span>
+                  (4.8k)
+                </p>
+              </div>
+            </div>
+            <div
+              class="relative p-3 bg-white rounded-md shadow-lg z-10 swiper-slide"
+            >
+              <div class="mb-3">
+                <a href="#">
+                  <img
+                    src="asset/images/london_opti_1_F.webp"
+                    class="rounded-md bg-no-repeat bg-center bg-cover"
+                    alt="IMG"
+                  />
+                </a>
+              </div>
+              <span
+                class="py-1 px-3 bg-emerald-500 hover:bg-emerald-600 cursor-pointer rounded-md text-white whitespace-nowrap"
+              >
+                London
+              </span>
+              <div class="pt-4">
+                <p class="text-justify">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="flex justify-between items-center py-3">
+                <span class="font-semibold">See More</span>
+                <p class="flex items-center">
+                  <span class="pr-2">
+                    <img
+                      src="asset/images/paper-plane.png"
+                      class="w-4"
+                      alt=""
+                    />
+                  </span>
+                  (4.8k)
+                </p>
+              </div>
+            </div>
+            <div
+              class="relative p-3 bg-white rounded-md shadow-lg z-10 swiper-slide"
+            >
+              <div class="mb-3">
+                <a href="#">
+                  <img
+                    src="asset/images/london_opti_1_F.webp"
+                    class="rounded-md bg-no-repeat bg-center bg-cover"
+                    alt="IMG"
+                  />
+                </a>
+              </div>
+              <span
+                class="py-1 px-3 bg-emerald-500 hover:bg-emerald-600 cursor-pointer rounded-md text-white whitespace-nowrap"
+              >
+                London
+              </span>
+              <div class="pt-4">
+                <p class="text-justify">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="flex justify-between items-center py-3">
+                <span class="font-semibold">See More</span>
+                <p class="flex items-center">
+                  <span class="pr-2">
+                    <img
+                      src="asset/images/paper-plane.png"
+                      class="w-4"
+                      alt=""
+                    />
+                  </span>
+                  (4.8k)
+                </p>
+              </div>
+            </div>
+            <div
+              class="relative p-3 bg-white rounded-md shadow-lg z-10 swiper-slide"
+            >
+              <div class="mb-3">
+                <a href="#">
+                  <img
+                    src="asset/images/london_opti_1_F.webp"
+                    class="rounded-md bg-no-repeat bg-center bg-cover"
+                    alt="IMG"
+                  />
+                </a>
+              </div>
+              <span
+                class="py-1 px-3 bg-emerald-500 hover:bg-emerald-600 cursor-pointer rounded-md text-white whitespace-nowrap"
+              >
+                London
+              </span>
+              <div class="pt-4">
+                <p class="text-justify">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="flex justify-between items-center py-3">
+                <span class="font-semibold">See More</span>
+                <p class="flex items-center">
+                  <span class="pr-2">
+                    <img
+                      src="asset/images/paper-plane.png"
+                      class="w-4"
+                      alt=""
+                    />
+                  </span>
+                  (4.8k)
+                </p>
+              </div>
+            </div>
+            <div
+              class="relative p-3 bg-white rounded-md shadow-lg z-10 swiper-slide"
+            >
+              <div class="mb-3">
+                <a href="#">
+                  <img
+                    src="asset/images/london_opti_1_F.webp"
+                    class="rounded-md bg-no-repeat bg-center bg-cover"
+                    alt="IMG"
+                  />
+                </a>
+              </div>
+              <span
+                class="py-1 px-3 bg-emerald-500 hover:bg-emerald-600 cursor-pointer rounded-md text-white whitespace-nowrap"
+              >
+                London
+              </span>
+              <div class="pt-4">
+                <p class="text-justify">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="flex justify-between items-center py-3">
+                <span class="font-semibold">See More</span>
+                <p class="flex items-center">
+                  <span class="pr-2">
+                    <img
+                      src="asset/images/paper-plane.png"
+                      class="w-4"
+                      alt=""
+                    />
+                  </span>
+                  (4.8k)
+                </p>
+              </div>
+            </div>
+            <div
+              class="relative p-3 bg-white rounded-md shadow-lg z-10 swiper-slide"
+            >
+              <div class="mb-3">
+                <a href="#">
+                  <img
+                    src="asset/images/london_opti_1_F.webp"
+                    class="rounded-md bg-no-repeat bg-center bg-cover"
+                    alt="IMG"
+                  />
+                </a>
+              </div>
+              <span
+                class="py-1 px-3 bg-emerald-500 hover:bg-emerald-600 cursor-pointer rounded-md text-white whitespace-nowrap"
+              >
+                London
+              </span>
+              <div class="pt-4">
+                <p class="text-justify">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="flex justify-between items-center py-3">
+                <span class="font-semibold">See More</span>
+                <p class="flex items-center">
+                  <span class="pr-2">
+                    <img
+                      src="asset/images/paper-plane.png"
+                      class="w-4"
+                      alt=""
+                    />
+                  </span>
+                  (4.8k)
+                </p>
+              </div>
+            </div>
+            <div
+              class="relative p-3 bg-white rounded-md shadow-lg z-10 swiper-slide"
+            >
+              <div class="mb-3">
+                <a href="#">
+                  <img
+                    src="asset/images/london_opti_1_F.webp"
+                    class="rounded-md bg-no-repeat bg-center bg-cover"
+                    alt="IMG"
+                  />
+                </a>
+              </div>
+              <span
+                class="py-1 px-3 bg-emerald-500 hover:bg-emerald-600 cursor-pointer rounded-md text-white whitespace-nowrap"
+              >
+                London
+              </span>
+              <div class="pt-4">
+                <p class="text-justify">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="flex justify-between items-center py-3">
+                <span class="font-semibold">See More</span>
+                <p class="flex items-center">
+                  <span class="pr-2">
+                    <img
+                      src="asset/images/paper-plane.png"
+                      class="w-4"
+                      alt=""
+                    />
+                  </span>
+                  (4.8k)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-button-next swiper-navBtn bg-gradient-to-r from-emerald-300 to-orange-300"
+        ></div>
+        <div
+          class="swiper-button-prev swiper-navBtn bg-gradient-to-r from-emerald-300 to-orange-300"
+        ></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- blog section end here -->
+
+    <!-- Testimonials section start here -->
+    <section
+      id="testimonial"
+      class="w-full lg:w-[95%] xl:w-[1100px] px-5 mx-auto py-5 bg-white mt-10"
+    >
+      <div class="flex items-center justify-center gap-1">
+        <h5 class="text-2xl font-medium text-emerald-600">Testimonial</h5>
+        <img
+          src="asset/images/rainbow.png"
+          class="w-3 rotate-90 -mt-3"
+          alt=""
+        />
+      </div>
+      <div class="text-center pb-5">
+        <h2 class="text-3xl md:text-5xl font-semibold mt-3">
+          What Our Happy Client Say
+        </h2>
+      </div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 py-5 items-center justify-center gap-6"
+      >
+        <div id="testimonial_left" class="testmonials-img">
+          <img alt="Tour" src="asset/images/testimonials-img.png" />
+        </div>
+        <div
+          id="testimonial_right"
+          class="testmonials-slider w-[90%] md:w-[95%] pl-3"
+        >
+          <!-- Swiper -->
+          <div class="swiper mySwipertest">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="bg-white border flex justify-between items-center w-full shadow-md p-4 border-solid border-gray-200 rounded-md"
+                >
+                  <!--text-->
+                  <div class="w-[80%]">
+                    <img src="asset/images/quote.png" class="w-5" alt="" />
+                    <p
+                      class="text-gray-500 tracking-wide h-32 overflow-y-scroll p-2 text-base pt-2 pb-4"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aspernatur iste similique, sit voluptas molestiae porro
+                      laboriosam! Molestiae recusandae saepe neque odit
+                      architecto laudantium accusantium facilis. Est sed aliquam
+                      voluptates officiis!
+                    </p>
+                    <strong class="font-semibold text-gray-800"
+                      >Alex Falcan</strong
+                    >
+                  </div>
+                  <!--img-->
+                  <div
+                    class="w-24 h-24 overflow-hidden flex bg-pink-500 ml-5 rounded-[50%]"
+                  >
+                    <img
+                      alt="Testimonials"
+                      src="asset/images/t-member.jpg"
+                      class="w-full h-full object-cover object-center"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="bg-white border flex justify-between items-center w-full shadow-md p-4 border-solid border-gray-200 rounded-md"
+                >
+                  <!--text-->
+                  <div class="w-[80%]">
+                    <img src="asset/images/quote.png" class="w-5" alt="" />
+                    <p
+                      class="text-gray-500 tracking-wide h-32 overflow-y-scroll p-2 text-base pt-2 pb-4"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aspernatur iste similique, sit voluptas molestiae porro
+                      laboriosam! Molestiae recusandae saepe neque odit
+                      architecto laudantium accusantium facilis. Est sed aliquam
+                      voluptates officiis!
+                    </p>
+                    <strong class="font-semibold text-gray-800"
+                      >Alex Falcan</strong
+                    >
+                  </div>
+                  <!--img-->
+                  <div
+                    class="w-24 h-24 overflow-hidden flex bg-pink-500 ml-5 rounded-[50%]"
+                  >
+                    <img
+                      alt="Testimonials"
+                      src="asset/images/t-member.jpg"
+                      class="w-full h-full object-cover object-center"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials section end here -->
+
+    <!--==Subscribe===========================-->
+    <section
+      id="subscribe"
+      class="w-full md:w-[95%] xl:w-[1100px] opacity-0 px-5 mx-auto py-5 bg-white mb-5 bg-right-top"
+    >
+      <div
+        class="max-h-72 flex flex-col justify-center items-center bg-[#f8fffd] border rounded-md py-5"
+      >
+        <strong>Subscribe our newsletter</strong>
+        <p>Reacive Latest News, Updates, and other things every weak.</p>
+        <form>
+          <input
+            type="email"
+            name="subscribe"
+            placeholder="Enter Your Email Address"
+            required
+          />
+          <button>
+            <img src="asset/images/paper-plane.png" class="w-1/2" alt="" />
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer section start here -->
+    <footer class="text-gray-600 body-font">
+      <div
+        class="w-full lg:w-[95%] xl:w-[1100px] px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <div class="left w-44 md:w-auto">
+          <img src="asset/images/logo-svg.svg" alt="" />
+        </div>
+        <p
+          class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+        >
+          © 2024 Travelia — All Rights Reserved
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+        >
+          <a class="text-gray-500">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+              ></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+    <!-- footer section end here -->
+
+    <!-- js code start here  -->
+    <script src="src/JS/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="src/JS/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".slide-container", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        sliderPerGroup: 4,
+        loop: true,
+        centerSlide: "true",
+        fade: "true",
+        grabCursor: "true",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          520: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+        },
+      });
+      var swiper = new Swiper(".mySwipertest", {
+        effect: "cards",
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+      });
+      // navbar section code start here
+
+      let navLinks = document.querySelector(".nav-links");
+
+      function navbarMenuToggleFnc() {
+        if (navLinks.classList.contains("top-[-400%]")) {
+          navLinks.classList.remove("top-[-400%]");
+          navLinks.classList.add("top-[100%]");
+        } else {
+          navLinks.classList.remove("top-[100%]");
+          navLinks.classList.add("top-[-400%]");
+        }
+      }
+      // navbar section code end here
+    </script>
+  </body>
+</html>

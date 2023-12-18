@@ -1,0 +1,238 @@
+/* header section code here  */
+.header_section {
+    animation: headerTransition 1s ease forwards;
+}
+
+@keyframes headerTransition {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/* hero section code here  */
+.hero_left {
+    animation: leftSectionAnimation 1s ease forwards;
+    opacity: 1;
+}
+
+@keyframes leftSectionAnimation {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.hero_right {
+    animation: rightSectionAnimation 1s ease forwards;
+    opacity: 1;
+}
+
+@keyframes rightSectionAnimation {
+    0% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* hero section  card and hot_air_baloon animation*/
+.hero_rating_container {
+    animation-name: ratingSectionAnimation;
+    animation-duration: 6s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    opacity: 1;
+}
+
+@keyframes ratingSectionAnimation {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.hero_location_container {
+    animation-name: locationSectionAnimation;
+    animation-duration: 6s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    opacity: 1;
+}
+
+@keyframes locationSectionAnimation {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.hot_air_baloon {
+    animation: flotingBaloon 6s ease-in-out 1s infinite;
+}
+
+@keyframes flotingBaloon {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* hero_footer_section code here */
+
+.hero_footer_section{
+    animation: hero_footer 0.5s ease;
+    opacity: 1;
+}
+@keyframes hero_footer {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+/* destination_section code here */
+
+.destination {
+    animation: destinationAnimation 0.8s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes destinationAnimation {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* service section code here  */
+.service_left {
+    animation: serviceLeftSectionAnimation 1s ease forwards;
+    opacity: 1;
+}
+
+@keyframes serviceLeftSectionAnimation {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.service_right {
+    animation: serviceRightSectionAnimation 1s ease forwards;
+    opacity: 1;
+}
+
+@keyframes serviceRightSectionAnimation {
+    0% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.blog {
+    animation: blogAnimation 0.8s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes blogAnimation {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* service section code here  */
+.testimonial_left {
+    animation: testimonialLeftSectionAnimation 1s ease forwards;
+    opacity: 1;
+}
+
+@keyframes testimonialLeftSectionAnimation {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.testimonial_right {
+    animation: testimonialRightSectionAnimation 1s ease forwards;
+    opacity: 1;
+}
+
+@keyframes testimonialRightSectionAnimation {
+    0% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.subscribe {
+    animation: subscribeAnimation 0.8s ease-in-out;
+    animation-delay: 0.5s;
+    opacity: 1;
+}
+
+@keyframes subscribeAnimation {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
