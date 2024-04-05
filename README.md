@@ -1,4 +1,4 @@
-This is a travel website theme.
-I build this website using HTML,CSS,JS and Tailwind css.
-It is fully responsive also actractive website.
+This travel website theme has been meticulously crafted using HTML, CSS, JavaScript, and Tailwind CSS, resulting in a fully responsive and visually appealing platform. With its engaging design and seamless functionality, it offers users an immersive experience to explore destinations and plan their next adventure.
+
 LINK: https://codewithsandi-travelia.netlify.app/ 
+
